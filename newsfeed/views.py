@@ -41,3 +41,10 @@ def home(request):
     'home.html',
     { 'user': request.user }
     )
+
+def login(request):
+    form = LoginForm()
+    return render_to_response(
+        'registration/login.html',
+        {'form': form},
+        context_instance=RequestContext(request))
