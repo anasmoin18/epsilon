@@ -63,16 +63,22 @@
         -webkit-transition: 0.3s all ease-in-out;
     }
 
-    .btn-primary:hover {
+    .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
         color: #000;
         background-color: transparent;
         border-color: #000;
         border: 2px solid;
     }
 
+
     .navbar-inverse {
         background-color: #fff;
         border-color: #e9e9e9;
+    }
+
+    .navbar-nav>.active>a {
+        color: #000;
+        background-color: #fff;
     }
 
 /* Space Selectors */
@@ -103,6 +109,20 @@
 
 
 /* Custom Classes */
+    #logout {
+        color: rgba(0,0,0,0.6);
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 2px;
+        background-color: #fff;
+        transition: 0.3s all ease-in-out;
+        -webkit-transition: 0.3s all ease-in-out;   
+    }
+
+    #logout:hover {
+        color: #3f6ab4;
+    }
+
     .form-wrapper {
         padding: 40px 80px;
         width: 100%;
