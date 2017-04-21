@@ -7,6 +7,7 @@ from django.views.decorators.csrf import csrf_protect
 from django.shortcuts import render_to_response
 from django.http import HttpResponseRedirect
 from django.template import RequestContext
+from django.contrib.auth import authenticate, login
  
 @csrf_protect
 def register(request):
@@ -41,10 +42,3 @@ def home(request):
     'home.html',
     { 'user': request.user }
     )
-
-def login(request):
-    form = LoginForm()
-    return render_to_response(
-        'registration/login.html',
-        {'form': form},
-        context_instance=RequestContext(request))

@@ -2,6 +2,36 @@
 {% block title %}Welcome to Django{% endblock %}
 {% block head %}Welcome to Django{% endblock %}
 {% block content %}
-    <p>Welcome {{ user.username }} !!!</p>
-    <a href="/logout/">Logout</a>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-sm-3 hidden-md hidden-sm hidden-xs left-pane-wrapper">
+                <input class="left-pane-search" type="text" name="search" placeholder="Search">
+                <h1>Filters</h1>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Business Expansion</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Management Change</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Promotions</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Events</label>
+                </div>
+                <div class="checkbox disabled">
+                    <label><input type="checkbox" value="" disabled>Thought Leadership</label>
+                </div>
+                <div class="checkbox disabled">
+                    <label><input type="checkbox" value="" disabled>M&amp;A</label>
+                </div>
+            </aside>
+            <main class="col-sm-9 right-pane-wrapper">
+                <article class="news-item-wrapper"></article>
+                <article class="news-item-wrapper"></article>
+                <article class="news-item-wrapper"></article>
+                <article class="news-item-wrapper"></article>
+            </main>
+        </div>
+    </div>
 {% endblock %}
