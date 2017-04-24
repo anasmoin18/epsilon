@@ -19,8 +19,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
-AUTHENTICATION_BACKENDS = ('newsfeed.backends.EmailBackend', 'django.contrib.auth.backends.ModelBackend')
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'h_-*6f&kd*!u_+ilux+o&&giyi$@hun#bl3=3(lhd$yojr_t=i'
 

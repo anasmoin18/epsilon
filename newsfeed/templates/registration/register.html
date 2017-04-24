@@ -7,8 +7,8 @@
         <div class="col-sm-12">
             <div class="form-wrapper">
                 <div class="text-center">
-                    <h1>Welcome to Contify</h1><h1>
-                    </h1><h3>Sign Up</h3>
+                    <h1>Welcome to Contify</h1>
+                    <h3>Sign Up</h3>
                 </div>
                 <div class="space-40"></div>
                 <form method="post" action=".">{% csrf_token %}        
@@ -29,24 +29,6 @@
         </div>
     </div>
     </div>
-    <!-- Form Validations: Registration-->
-    <script>
-      function myFunction() {
-        var x, text;
-
-        // Get the value of the input field with id="numb"
-        x = document.getElementById("id_username").value;
-
-        // If x is Not a Number or less than one or greater than 10
-        if (isNaN(x) || x < 1 || x > 10) {
-            text = "Input not valid";/success
-        } else {
-            text = "Input OK";
-        }
-
-        document.getElementById("error-blip").innerHTML = text;
-    }
-    </script>
 {% endblock %}
 
 

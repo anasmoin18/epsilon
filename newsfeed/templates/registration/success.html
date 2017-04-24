@@ -1,9 +1,21 @@
 {% extends "base.html" %}
-{% block title %}Registration Successful{% endblock %}
-{% block head %}
- Registration Completed Successfully
-{% endblock %}
+{% block title %}Login{% endblock %}
+{% block head %}Login{% endblock %}
 {% block content %}
-    Thank you for registering.
-    <a href="/">Login</a> 
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-wrapper">
+                <div class="text-center">
+                    <h1>Congratulations!</h1>
+                    <div class="space-20"></div>
+                    <p>You&rsquo;re ready to use the powerful features that come with your Contify account!<br>Click on the login button below to get started.</p>
+                    <div class="space-40"></div>
+                    <a href="/" class="btn btn-default btn-primary" type="submit" id="login", value="login">Login</a>                      
+                </div>
+                <div class="space-40"></div>
+            </div>
+        </div>
+    </div>
+    </div>
 {% endblock %}
