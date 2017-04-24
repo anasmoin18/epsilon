@@ -24,10 +24,10 @@ class RegistrationForm(forms.Form):
             user = User.objects.get(username__iexact=self.cleaned_data['username'])
         except User.DoesNotExist:
             return self.cleaned_data['username']
-        raise forms.ValidationError(_("⚠️ This username has already been claimed. Maybe try another one?"))
+        raise forms.ValidationError(_("This username has already been claimed. Maybe try another one?"))
 
     def clean(self):
         if 'password1' in self.cleaned_data and 'password2' in self.cleaned_data:
             if self.cleaned_data['password1'] != self.cleaned_data['password2']:
-                raise forms.ValidationError(_("⚠️ The passwords did not match."))
+                raise forms.ValidationError(_("The passwords did not match."))
         return self.cleaned_data
